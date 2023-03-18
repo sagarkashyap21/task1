@@ -1,25 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// import Contact from './Contact';
+import Navbar from './Navbar';
+import Home from "./Component/Home"
+import Login from './Login';
+import Addclient from './Component/Addclient';
+import Viewclient from './Component/Viewclient';
+import Profile from './Component/Profile';
+import Payment from './Component/Payment';
+import Theme from './Component/Theme';
+import Module from './Component/Module';
 
-function App() {
+export default function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    <>
+      <div className="main">
+        <Router>
 
-export default App;
+          <Routes>
+            <Route exact path="*" element={<Login />} />
+
+            <Route exact path="/Navbar" element={<Navbar />} />
+            <Route exact path="/Home" element={<Home />} />
+            <Route exact path="/Addclient" element={<Addclient />}>
+              <Route exact path="/Addclient/profile" element={<Profile />} />
+              <Route exact path="/Addclient/payment" element={<Payment />} />
+              <Route exact path="/Addclient/theme" element={<Theme />} />
+              <Route exact path="/Addclient/module" element={<Module />} />
+            </Route>
+            <Route exact path="/Viewclient" element={<Viewclient />} />
+            {/* <Route exact path="/contact" element={<Contact />} /> */}
+          </Routes>
+        </Router>
+      </div>
+    </>
+  )
+}
