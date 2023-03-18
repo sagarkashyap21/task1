@@ -5,6 +5,7 @@ import Module from './Module';
 import Payment from './Payment';
 import Profile from './Profile';
 import Theme from './Theme';
+import f317 from "./Images/Frame 317.png"
 
 
 export default function Addclient() {
@@ -22,7 +23,7 @@ export default function Addclient() {
                     <h3> Client Master</h3>
                     <p><Link to="/home" className="client" >View Clients</Link> </p>
                     <p><Link to="/Addclient" className="client" >Add Clients</Link></p>
-                    <img className="user" src="/Images/Frame 317.png" alt="" />
+                    <img className="user" src={f317} alt="" />
                 </div>
                 <div className="addclient">
                     <div className="header">
