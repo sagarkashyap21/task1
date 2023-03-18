@@ -1,18 +1,22 @@
 import React from 'react'
 import List from '../List';
+import button2 from "./Images/Button2.png"
+import button from "./Images/Button.png"
+import if2 from "./Images/input field2.png"
 
 
 export default function Viewclient() {
     return (
+        
              <div className="home2">
                 <div className="home21">
                     <h1>View Clients</h1>
                     <p>Client Master <span style={{ color: "gray" }}>/View Clients</span></p>
                     <div className="header">
-                        <img src="/Images/input field2.png" alt="" />
+                        <img src={if2} alt="" />
                         <div>
-                            <img src="/Images/Button.png" alt="" />
-                            <img className="mx-2" src="/Images/Button2.png" alt="" />
+                            <img src={button} alt="" />
+                            <img className="mx-2" src={button2} alt="" />
                         </div>
                     </div>
                     <div className="t">

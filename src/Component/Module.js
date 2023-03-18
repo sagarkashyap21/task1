@@ -1,4 +1,5 @@
 import React from 'react'
+import Icon from "./Images/Icon Block.png"
 
 export default function Module() {
     return (
@@ -45,7 +46,7 @@ export default function Module() {
             </div>
             <div className="module2">
                 <div className="md21">
-                    <img src="/Images/Icon Block.png" alt="" />
+                    <img src={Icon} alt="" />
                     <div>
                         <h4>Daily Tasks</h4>
                         <p style={{ color: "gray" }}>Select the sub modules that the client can use.</p>

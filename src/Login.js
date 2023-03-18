@@ -50,8 +50,8 @@ export default function Login(props) {
             <h1>Welcome</h1>
             <p>Enter your Username and Passoword.</p>
             <ul>
-              <li><i class="fa fa-light fa-user"></i><input type="text"  onChange={(e)=>setemail(e.target.value)}  placeholder="Username" /></li>
-              <li><i class="fa fa-thin fa-lock"></i><input type="text"  onChange={(e)=>setpassword(e.target.value)} placeholder="Password" /><i class="fa fa-light fa-eye"></i></li>
+              <li><i class="fa fa-light fa-user"></i><input type="text" onChange={(e) => setemail(e.target.value)} placeholder="Username" /></li>
+              <li><i class="fa fa-thin fa-lock"></i><input type="text" onChange={(e) => setpassword(e.target.value)} placeholder="Password" /><i class="fa fa-light fa-eye"></i></li>
               <li onClick={login}>Login</li>
             </ul>
             <p style={{ color: "#686687", textDecoration: "underline" }}>Forgot Password?</p>
@@ -59,13 +59,18 @@ export default function Login(props) {
         </div>
         <div className="login2">
           <div className="login21">
-            <div className="rectangle1"></div>
-            <div className="rectangle2"><img src="/Images/Rectangle2.png" alt="" /></div>
+            <div className="rectangle1">
+
+            </div>
+            <div className="rectangle2">
+              {/* <img src="/Images/Screenshot (31).png" alt="269" /> */}
+            </div>
+            {/* <img src="" alt="" /> */}
           </div>
           <div className="login22">
             <h2>360° Solution for Asset Management</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                 </div>
+          </div>
 
         </div>
       </div>
