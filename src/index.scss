@@ -7,6 +7,12 @@ padding: 0;
 html{
   font-size: 62.5%;
 }
+.login2{
+display: flex;
+flex-direction: column;
+justify-content: center;
+  align-items: center;
+}
 .rectangle2{
   // background-color: white;
   // border-bottom: 38rem solid white;
@@ -17,7 +23,7 @@ html{
   // margin: 3rem;
   border-radius: 20px;
   rotate: 90deg;
-  margin-left: 30rem;
+  margin-left: 13rem;
   margin-top: -24rem;
 }
 li{
@@ -73,6 +79,7 @@ Link{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  // width: 20%;
   align-items: center;
     & h1{
       // width: 14rem;
@@ -130,6 +137,7 @@ Link{
 & .login2{
   // border: 2px solid orange;
 height: 100%;
+// width: 100%;
 background-color:  #1334B3;;
   & .login21{
     // border: 2px solid green;
@@ -519,7 +527,7 @@ border-radius: 1.5%;
   width: 16rem;
 }
 .rectangle2{
-  margin-left: 23rem;
+  margin-left: 13rem;
 }
 .module .module2 {
   border: 1px solid lightgray;
@@ -538,7 +546,7 @@ border-radius: 1.5%;
     width: 18rem;
   }
   .rectangle2{
-    margin-left: 20rem;
+    margin-left: 13rem;
   }
   .home .home1 p{
     width: 15rem;
@@ -560,7 +568,7 @@ html{
   width: 71%;
 }
 .rectangle2{
-  margin-left: 19rem;
+  margin-left: 13rem;
 }
 }
 @media only screen and (max-width: 760px){
@@ -568,7 +576,7 @@ html{
     font-size: 47%;
   }
   .rectangle2{
-    margin-left: 17rem;
+    margin-left: 13rem;
   }
   .home .home1 img {
     width: 16rem;
@@ -620,7 +628,7 @@ width: 14rem;
 
 @media only screen and (max-width: 640px){
   .rectangle2{
-    margin-left: 12rem;
+    margin-left: 15rem;
     width: 27rem;
   }
 }
@@ -657,6 +665,15 @@ width: 14rem;
     width: 7rem;
     padding: 0;
   }
+  .rectangle1{
+    width: 42rem;
+  }
+  .rectangle2 {
+    margin-left: 13rem;
+    margin-top: -21rem;
+    width: 28rem;
+    height: 32rem;
+}
   
 }
 @media only screen and (max-width: 500px){
@@ -667,10 +684,16 @@ width: 12rem;
   }
 }
 .rectangle2 {
-  margin-left: 9rem;
-  margin-top: -22rem;
-  width: 28rem;
-  height: 34rem;
+  margin-left: 11rem;
+  margin-top: -19rem;
+  width: 30rem;
+  height: 29rem;
+}
+.rectangle1{
+  width: 42rem;
+}
+.login2{
+  width: fit-content;
 }
 }
 
@@ -692,10 +715,10 @@ width: 12rem;
   width: 30rem;
 }
 .rectangle2 {
-   margin-left:11rem; 
+  margin-left: 12rem;
   margin-top: -19rem;
-  width: 20rem;
-  height: 30rem;
+  width: 31rem;
+  height: 29rem;
 }
 .d-flex{
 width: 11rem;
@@ -721,9 +744,9 @@ width: 11rem;
   font-size: 1.1rem;
 }
 .rectangle2 {
-  margin-left: 6rem;
+  margin-left: 13rem;
   margin-top: -17rem;
-  width: 23rem;
+  width: 28rem;
   height: 24rem;
 }
 .d-flex{
